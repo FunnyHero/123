@@ -68,8 +68,8 @@ void fill_stack() {
 void read() {
 	//TODO: read from top of stack
 	for (int i = 0; i < 10; ++i) {
-		msg* x=pop();
-		cout << x << endl;
+		msg x=*pop();
+		cout << x.currency_amt_fst <<" "<< x.currency_amt_scd << endl;
 	}
 	//TODO: print to stdout
 	//TODO: delete
