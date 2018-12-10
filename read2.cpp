@@ -19,7 +19,7 @@ public:
 		top = nullptr;
 	};
 	~stack() {
-		//TODO
+		delete top;
 	};
 
 	void push(int);
