@@ -11,8 +11,7 @@ struct node_t {
 
 
 class stack {
-private:
-	
+
 public:
 	node_t* top;
 	stack() {
