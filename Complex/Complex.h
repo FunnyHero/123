@@ -33,16 +33,16 @@ Complex Complex::operator + (const Complex &compl)const {
 	return Complex(re + compl.re, im + compl.im);
 }
 
-Complex Complex::operator * (const Complex &c)const {
-	return Complex(re * c.re - im * c.im, re * c.im + im * c.re);
+Complex Complex::operator * (const Complex &compl)const {
+	return Complex(re * compl.re - im * compl.im, re * compl.im + im * compl.re);
 }
 
 const double Complex::abs() const {
 	return sqrt(re*re + im*im);
 }
 
-ostream& operator<< (ostream &out, const Complex &c) {
-	out << c.re << '+' << '(' << c.im << ')' << 'i';
+ostream& operator<< (ostream &out, const Complex &compl) {
+	out << compl.re << '+' << '(' << compl.im << ')' << 'i';
 	return out;
 }
 
