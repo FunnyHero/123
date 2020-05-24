@@ -9,7 +9,6 @@ private:
 		Node* nextElement;
 		Node* previousElement;
 		Node() {
-			this->value = value;
 			nextElement = nullptr;
 			previousElement = nullptr;
 		}
